@@ -21,4 +21,13 @@ public class StudentController {
         model.addAttribute("students",st);
         return "student-list";
     }
+
+    @GetMapping("/profile")
+    public String showStudentProfile(Model model){
+        StudentEntity studentEntity =
+                new StudentEntity(1 , "Sameer","sameer@gmail.com","123");
+        model.addAttribute("student",studentEntity);
+        return "student-profile";
+
+    }
 }

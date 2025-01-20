@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>Student Profile Page</h1>
+
+<div th:object="${student}">
+  <p>Name : <span th:text="*{name}"></span></p>
+  <p>Email : <span th:text="*{email}"></span></p>
+  <p>Phone : <span th:text="*{phone}"></span></p>
+
+</div>
+
+</body>
+</html>
