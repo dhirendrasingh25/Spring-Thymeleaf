@@ -6,6 +6,7 @@
 </head>
 <body>
 <h1>Student Profile Page</h1>
+<h2>App Name : <span th:text="#{app.name}" /></h2>
 
 <div th:object="${student}">
   <p>Name : <span th:text="*{name}"></span></p>
